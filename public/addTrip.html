@@ -1,0 +1,23 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>WanderWise</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <section class="formBox">
+    <h1>Add a new trip</h1>
+    <form method="POST" action='/addTrip'>
+      <label for="tripName"> Trip Name</label>
+      <input name="tripName" type="text" placeholder="Trip Name"></input>
+      <label for="tripLocation"> Trip Location</label>
+      <input name="tripLocation" type="text" placeholder="Trip Location"></input>
+      <label for="startDate">Start Date</label>
+      <input name="startDate" type="date" placeholder="Start Date"></input>
+      <label for="endDate">End Date</label>
+      <input name="endDate" type="date" placeholder="End Date"></input>
+      <input type='submit' value="+ Create Trip">
+    </form>
+  </section>
+</body>
+</html>
