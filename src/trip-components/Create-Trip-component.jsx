@@ -1,11 +1,12 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+//import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 
 const HeadTrip = () => {
   return (
-    <Router>
+    <div>
       <h1 className="heading"> Trip name </h1>
-    </Router>
+      <CreatEvent/>
+    </div>
   );
 };
 
@@ -14,8 +15,8 @@ const CreatEvent = () => {
   const [data, setData] = useState({
     itinerary: "",
     data: "",
-    startTime: "time",
-    endTime: "time",
+    startTime: "",
+    endTime: "",
   });
 
   // create a handler to be able to get the data from client
@@ -34,31 +35,74 @@ const CreatEvent = () => {
   const handleSubmit = async (event) => {
     event.preventDefaut();
     try {
-        const response = await fecth('http://localhost:8080',{
-			   method: 'POST',
-			   headers: {
-				   'Content-Type': 'application/json'
-			   },
-			   body: JSON.stringify(data)
-		   });
-           // reset, to be able to resgister another itinerary
-        if(response.ok){
-            setData({
-                itinerary: "",
-                data: "",
-                startTime: "time",
-                endTime: "time",
-            });
-        }else{
-            console.error('Error addign treatment');
-        }
+      const response = await fetch("http://localhost:3000", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+      // reset, to be able to resgister another itinerary
+      if (response.ok) {
+        setData({
+          itinerary: "",
+          date: "",
+          startTime: "time",
+          endTime: "time",
+        });
+      } else {
+        console.error("Error addign treatment");
+      }
     } catch (error) {
-        console.error('Error addign treatment');
+      console.error("Error addign treatment");
     }
-
   };
-    return(
-        <form onSubmit={handleSubmit}></form>
+  return (
+     <form onSubmit={handleSubmit}>
+     <label>
+		  		Itinerary event name:
+		   		<input
+		  		  type="text"
+		   		  name= "itinerary"
+		  		  value={data.itinerary}
+		  		  onChange={handleChange}
+		     />
+			 </label>
+       <div>
+         <label>
+		  		 Date:
+		   		<input
+		  		  type="date"
+		   		  name= "date"
+		  		  value={data.date}
+		  		  onChange={handleChange}
+		     />
+			   </label>
+       </div>
+       <div>
+       <label>
+		  		 Start Time:
+		   		<input
+		  		  type="time"
+		   		  name= "startTime"
+		  		  value={data.startTime}
+		  		  onChange={handleChange}
+		     />
+			   </label>
+       </div>
+       <div>
+       <label>
+		  		 End Time:
+		   		<input
+		  		  type="time"
+		   		  name= "endTime"
+		  		  value={data.endTime}
+		  		  onChange={handleChange}
+		     />
+			   </label>
+       </div>
+       <button type="submit">Submit</button>
+       </form>
   );
 };
 
