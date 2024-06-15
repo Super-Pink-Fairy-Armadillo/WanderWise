@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm-run-all --parallel start-backend start-frontend",
-    "start-backend": "node ./server/server.js",
-    "start-frontend": "react-scripts start",
-    "build": "webpack --mode production"
+    "start-backend": "nodemon ./server/server.js",
+    "start-frontend": "PORT=8080 react-scripts start",
+    "build": "webpack --mode=production"
   },
   "repository": {
     "type": "git",
