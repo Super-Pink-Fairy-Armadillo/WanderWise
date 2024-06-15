@@ -36,11 +36,10 @@ module.exports = {
                 context: ['/api'],
                 target: 'http://localhost:3000',
                 secure: false,
-                
             },
         ],
         static: {
-            publicPath: path.join(__dirname, './src')
+            publicPath: path.join(__dirname, './public')
         },
         compress: true,
         port: 8080,
@@ -51,5 +50,5 @@ module.exports = {
         new HTMLWebpackPlugin({
             template: path.join(__dirname, '/src/index.html')
         })
-    ]
+    ],
 }
