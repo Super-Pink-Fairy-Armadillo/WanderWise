@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Dashboard from './components/Dashboard.jsx';
 
 function App() {
   return (
     <div>
-      <h1>This is a test</h1>
+      <Dashboard />
     </div>
   );
 }
