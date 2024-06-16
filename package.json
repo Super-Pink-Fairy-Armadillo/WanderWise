@@ -24,9 +24,9 @@
   },
   "scripts": {
     "start": "npm-run-all --parallel start-backend start-frontend",
-    "start-backend": "node ./server/server.js",
+    "start-backend": "nodemon ./server/server.js",
     "start-frontend": "PORT=8080 react-scripts start",
-    "build": "webpack --mode production",
+    "build": "webpack --watch --mode production",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
