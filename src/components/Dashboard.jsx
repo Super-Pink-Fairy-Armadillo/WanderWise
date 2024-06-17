@@ -27,11 +27,15 @@ function Dashboard() {
 
   return (
     <div>
-      <h1>Dashboard</h1>
-      {dashboardCards}
+      <section class='header'>
+        <h1>Dashboard</h1>
+      </section>
       <a href={`/addTrip/${user}`}>
-        <button>Add Trip</button>
+        <button id='addTrip'>+ Add Trip</button>
       </a>
+      <section class='tripCards'>
+        {dashboardCards}
+      </section>
     </div>
   );
 }
