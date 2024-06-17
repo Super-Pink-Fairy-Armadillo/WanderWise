@@ -8,7 +8,7 @@ body {
 }
 
 .formBox {
-    background-color: #ffffff;
+    background-color: #ffffffd8;
     padding: 15px;
     padding-top: 25px;
     border-radius: 15px;
@@ -68,13 +68,11 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #527eba;
+    background-color: #3a5273;
 }
 
 input[type="submit"]:active {
-    background-color: #ffffff;
-    color: #4b678d;
-    border: 1px solid #4b678d;
+    background-color: #2a4263;
 }
 
 a {

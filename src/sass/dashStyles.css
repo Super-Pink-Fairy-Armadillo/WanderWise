@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b3c7d9;
+}
+
+.dashHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+}
+
+.tripCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tripCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 4px 5px 10px 2px rgba(0, 0, 0, 0.326);
+    background-color: #ffffffef;
+    width: 20%;
+    height: 150px;
+}
+
+.tripCardName {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.tripCardLocation {
+   margin-bottom: 20px;
+}
+
+#addTrip {
+    margin-left: 20px;
+    padding: 5px;
+    width: 22%;
+    background-color: #4b678d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 4px 5px 10px 2px rgba(0, 0, 0, 0.326);
+}
+
+#addTrip:hover {
+    background-color: #3a5273;
+}
+
+#addTrip:active {
+    background-color: #2a4263;
+}
+
+#logout {
+    position: absolute;
+    bottom: 30px;
+    margin-left: 20px;
+    padding: 5px;
+    width: 10%;
+    background-color: #4b678d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 4px 5px 10px 2px rgba(0, 0, 0, 0.326);
+}
+
+#logout:hover {
+    background-color: #3a5273;
+}
+
+#logout:active {
+    background-color: #2a4263;
+}
