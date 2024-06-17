@@ -6,9 +6,7 @@ userController.loginUser = (req, res, next) => {
   // get username and password from req body
   const { username, password } = req.body;
 
-  console.log('LOGGING IN');
-  console.log('username:', username);
-  console.log('password:', password);
+  console.log('verifying credentials');
   //get request login middle wear
   // use bcrypt to get password hash
   //Verify that user is in database
@@ -21,13 +19,14 @@ userController.loginUser = (req, res, next) => {
   db.query(selectUser)
     .then((result) => (res.locals.user = result.rows))
     .then(() => next())
-    .catch(() =>
-      next({
+    .catch((err) => {
+      console.log(err);
+      return next({
         log: 'Error occured in loginUser middleware function',
         status: 500,
-        message: { err: 'An error occurred in selectUser Controller' },
+        message: { error: 'An error occurred in selectUser Controller' },
       })
-    );
+    });
 };
 
 module.exports = userController;

@@ -6,7 +6,7 @@ const cors = require('cors');
 const app = express();
 const port = 3000;
 
-const userController = require('controllers');
+const userController = require('./controllers');
 
 // Middleware for parsing JSON bodies
 app.use(express.json());
@@ -28,23 +28,27 @@ app.use(express.static(path.resolve(__dirname, '../dist')));
 
 // Serve index.html for all routes
 // app.get('*', (req, res) => {
-//   res.sendFile(path.resolve(__dirname, '../dist/index.html'));
+//   res.sendFile(path.resolve(__dirname, '../public/index.html'));
 // });
 
 //Define routes
 app.get('/', (req, res) => {
-  console.log('SEND TO DASHBOARD');
-  return res.status(200);
+  console.log('Render Dashboard');
+  console.log('GET!');
+
+  // return res.status(200).sendFile('../public/login.html');
+  return res.sendStatus(200);
 });
 
 //get request to /login page
 app.get('/login', (req, res) => {
+  console.log('Render Login Page');
   return res.status(200).json(res.locals.user);
 });
 
 //post request to /login page
 app.post('/login', userController.loginUser, (req, res) => {
-  console.log('ENTERED');
+  console.log('Successful Login!');
   return res.status(200).json(res.locals.user);
 });
 
@@ -100,6 +104,7 @@ app.all('*', (req, res) => {
 
 //Global Error Handling
 app.use((err, req, res, next) => {
+  console.log(err)
   const defaultErr = {
     log: 'Express error handler caught unknown middleware error',
     status: 500,
