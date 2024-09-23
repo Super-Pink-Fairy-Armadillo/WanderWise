@@ -22,7 +22,7 @@ Before running the project, ensure you have the following installed:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Super-Pink-Fairy-Armadillo/WanderWise.git)
+   git clone https://github.com/Super-Pink-Fairy-Armadillo/WanderWise.git
    ```
 2. Navigate to the project directory:
    ```bash
