@@ -90,11 +90,12 @@ For any inquiries or feedback, feel free to reach out to any of the following te
     <td>GitHub: <a href="https://github.com/FredAires">FredAires</a></td>
     <td>GitHub: <a href="https://github.com/nellysegi">nellysegi</a></td>
   </tr>
-  <tr>
-    <td><a href="https://www.linkedin.com/in/erick505alvarez/">LinkedIn</a></td>
-    <td><a href="https://www.linkedin.com/in/kimcuomo/">LinkedIn</a></td>
-    <td> <a href="https://www.linkedin.com/in/lauren-felty">LinkedIn</a></td>
-    <td><a href="https://www.linkedin.com/in/frederico-asneto/">LinkedIn</a></td>
-    <td><a href="https://www.linkedin.com/in/nellysegimoto/">LinkedIn</a></td>
-  </tr>
+<tr>
+  <td style="text-align: center;"><a href="https://www.linkedin.com/in/erick505alvarez/">LinkedIn</a></td>
+  <td style="text-align: center;"><a href="https://www.linkedin.com/in/kimcuomo/">LinkedIn</a></td>
+  <td style="text-align: center;"><a href="https://www.linkedin.com/in/lauren-felty">LinkedIn</a></td>
+  <td style="text-align: center;"><a href="https://www.linkedin.com/in/frederico-asneto/">LinkedIn</a></td>
+  <td style="text-align: center;"><a href="https://www.linkedin.com/in/nellysegimoto/">LinkedIn</a></td>
+</tr>
+
 </table>
