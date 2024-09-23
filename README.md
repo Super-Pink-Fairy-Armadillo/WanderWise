@@ -80,28 +80,21 @@ For any inquiries or feedback, feel free to reach out to any of the following te
     <td><strong>Erick Alvarez</strong></td>
     <td><strong>Kim Cuomo</strong></td>
     <td><strong>Lauren Felty</strong></td>
-  </tr>
-  <tr>
-    <td>GitHub: <a href="https://github.com/erick505alvarez">erick505alvarez</a></td>
-     <td>GitHub: <a href="https://github.com/kimcuomo">kimcuomo</a></td>
-     <td>GitHub: <a href="https://github.com/LaurenFelty">LaurenFelty</a></td>
-  </tr>
-  <tr>
-    <td>LinkedIn: <a href="https://www.linkedin.com/in/erick505alvarez"/>linkedin.com/in/erick505alvarez/</a></td>
-    <td>LinkedIn: <a href="https://www.linkedin.com/in/kimcuomo/">linkedin.com/in/kimcuomo/</a></td>
-    <td>LinkedIn: <a href="https://www.linkedin.com/in/lauren-felty">linkedin.com/in/lauren-felty</a></td>
-  </tr>
-  <tr>
     <td><strong>Frederico Neto</strong></td>
     <td><strong>Nelly Segimoto</strong></td>
   </tr>
   <tr>
-     <td>GitHub: <a href="https://github.com/FredAires">FredAires</a></td>
-     <td>GitHub: <a href="https://github.com/nellysegi">nellysegi</a></td>
+    <td>GitHub: <a href="https://github.com/erick505alvarez">erick505alvarez</a></td>
+    <td>GitHub: <a href="https://github.com/kimcuomo">kimcuomo</a></td>
+    <td>GitHub: <a href="https://github.com/LaurenFelty">LaurenFelty</a></td>
+    <td>GitHub: <a href="https://github.com/FredAires">FredAires</a></td>
+    <td>GitHub: <a href="https://github.com/nellysegi">nellysegi</a></td>
   </tr>
   <tr>
-    <td>LinkedIn: <a href="https://www.linkedin.com/in/frederico-asneto/">linkedin.com/in/frederico-asneto</a></td>
-    <td>LinkedIn: <a href="https://www.linkedin.com/in/nellysegimoto/">linkedin.com/in/nellysegimoto</a></td>
+    <td><a href="https://www.linkedin.com/in/erick505alvarez/">LinkedIn</a></td>
+    <td><a href="https://www.linkedin.com/in/kimcuomo/">LinkedIn</a></td>
+    <td> <a href="https://www.linkedin.com/in/lauren-felty">LinkedIn</a></td>
+    <td><a href="https://www.linkedin.com/in/frederico-asneto/">LinkedIn</a></td>
+    <td><a href="https://www.linkedin.com/in/nellysegimoto/">LinkedIn</a></td>
   </tr>
 </table>
-
